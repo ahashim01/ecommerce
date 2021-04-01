@@ -74,7 +74,6 @@ TEMPLATES = [
         },
     },
 ]
-print(TEMPLATES[0]['DIRS'])
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 

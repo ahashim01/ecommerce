@@ -3,6 +3,18 @@ from django.db import models
 
 
 class Item(models.Model):
+    CATEGORY_CHOICES = [
+        ('S','Shirt'),
+        ('SW','Sport wear'),
+        ('OW','Outwear')
+    ]
+
+    LABEL_CHOICES = [
+        ('P', 'primary'),
+        ('S', 'secondary'),
+        ('D', 'danger')
+    ]
+    
     title = models.CharField(
         max_length=255
     )
